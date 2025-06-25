@@ -1,8 +1,13 @@
 import pandas as pd
 from pandasai import SmartDataframe
 from pandasai.llm import OpenAI
+import os
+from dotenv import load_dotenv
 
-llm = OpenAI(model="gpt-3.5-turbo", temperature=0.1, api_token="YOUR_OPENAI_API_KEY")
+load_dotenv()
+openai_key=os.getenv("OPENAI_API_KEY")
+
+llm = OpenAI(model="gpt-3.5-turbo", temperature=0.1, api_token=openai_key)
 
 # Criar DataFrame
 df = pd.DataFrame({
@@ -14,5 +19,5 @@ df = pd.DataFrame({
 sdf = SmartDataframe(df, config={"llm": llm})
 
 # Usar
-resposta = sdf.chat("Qual o mês com a pior venda?")
+resposta = sdf.chat("Qual o mês com a melhor venda?")
 print(resposta)
