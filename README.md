@@ -1,11 +1,10 @@
 ## PANDAS AI PROJETC
-## Desafio de projeto: Criando um Sistema Bancário com Python
 <br>
 <hr>
 
 ## Features
 
-- Integration of AI with pandas for advanced data manipulation.
+- Integration of AI with pandas for data manipulation.
 - Examples and test cases to demonstrate PandasAI functionality.
 - Easy-to-follow code for learning and experimentation.
 
@@ -13,11 +12,11 @@
 
 1. Clone the repository:
   ```bash
-  git clone https://github.com/yourusername/pandasai-test.git
+  git clone https://github.com/me-wsantos/python-pandas-ai.git
   ```
 2. Navigate to the project directory:
   ```bash
-  cd pandasai-test
+  cd pandasai
   ```
 3. Install the required dependencies:
   ```bash
