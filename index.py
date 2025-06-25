@@ -2,7 +2,7 @@ import pandas as pd
 from pandasai import SmartDataframe
 from pandasai.llm import OpenAI
 
-llm = OpenAI(model="gpt-3.5-turbo", temperature=0.1, api_token="YOUR_API_KEY")
+llm = OpenAI(model="gpt-3.5-turbo", temperature=0.1, api_token="YOUR_OPENAI_API_KEY")
 
 # Criar DataFrame
 df = pd.DataFrame({
